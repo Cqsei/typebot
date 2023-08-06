@@ -25,17 +25,6 @@
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <ol>
-    <li><a href="#roadmap">Roadmap</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
