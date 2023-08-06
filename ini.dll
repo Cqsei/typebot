@@ -1,0 +1,13 @@
+#[DEFAULT]
+
+speed = 0.1 #The speed of the typing, best is around 0.3 to 0.1
+time_delay = 5 #The delay before the timer starts, star on github to add keybinds!
+
+#[RANGE]
+#Only use these if you want the speed to range from a certain speed
+#You can edit "delayrange" to show "range1" and "range2"
+#Use the link to get a tutorial on how to use it: https://youtube.com/notmade
+#Use the link to get a advanced tutorial on how to use it: https://youtube.com/notmade
+
+range1 = 0.1
+range2 = 0.3
