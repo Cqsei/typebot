@@ -36,8 +36,6 @@
     - [ ] French
     - [ ] Others...
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/Cqsei/typebot.svg?style=for-the-badge
 [contributors-url]: https://github.com/Cqsei/typebot/graphs/contributors
