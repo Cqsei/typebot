@@ -30,7 +30,7 @@
 
 - [x] Upload files
 - [ ] Hotkey
-- [ ] Gui
+- [x] Gui
 - [ ] Language support
     - [ ] Spanish
     - [ ] French
