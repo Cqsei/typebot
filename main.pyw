@@ -35,7 +35,7 @@ typebot_label = ttk.Label(root, text="TYPEBOT", style='Bold.TLabel')
 typebot_label.pack(pady=5)
 
 # Label for emergency exit instruction (split into two lines)
-emergency_label = ttk.Label(root, text="WHEN YOU PRESS PLAY,\nPRESS CTRL+F8 TO EMERGENCY EXIT",
+emergency_label = ttk.Label(root, text="WHEN YOU PRESS PLAY,\nPRESS (not set) TO EMERGENCY EXIT",
                             anchor='center', justify='center')
 emergency_label.pack(pady=5)
 
