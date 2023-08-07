@@ -45,10 +45,6 @@ class Sim_keyb_typing(threading.Thread):
             speed_delay = random.uniform(self.delayrange[0], self.delayrange[1])
             time.sleep(speed_delay)
 
-    while True:
-        if keyboard.is_pressed("ctrl+f8"):
-            sys.exit()
-
 # Let's wait 1.5 seconds and then start typing:
 skt = Sim_keyb_typing(txt, time_delay)
 skt.start()
