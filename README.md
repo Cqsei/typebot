@@ -9,7 +9,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Cqsei/typebot">
-    <img src="images-readme/icon.png" alt="Logo" width="80" height="80">
+    <img src="extras/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">TypeBot</h3>

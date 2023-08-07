@@ -1,0 +1,47 @@
+import tkinter as tk
+from tkinter import ttk
+from PIL import Image, ImageTk
+import webbrowser
+import os
+import configparser
+
+# Function to handle the "Play" button click event
+def play_game():
+    settings_file = "extras/typebot.py"
+    if os.path.exists(settings_file):
+        os.system(f"start {settings_file}")  # Open the file using the default text editor
+    else:
+        print("Settings file not found.")
+
+# Function to open the settings file in the default text editor
+def open_settings():
+    settings_file = "extras/settings.pyw"
+    if os.path.exists(settings_file):
+        os.system(f"start {settings_file}")  # Open the file using the default text editor
+    else:
+        print("Settings file not found.")
+
+# Create the main application window
+root = tk.Tk()
+root.title("Typebot GUI")
+
+root.geometry("280x265")
+
+# Load the logo image
+logo_image = Image.open("extras/logo.png")
+logo_image = logo_image.resize((150, 150))  # Resize the logo to 150x150 pixels
+logo_photo = ImageTk.PhotoImage(logo_image)
+
+# Create and pack the logo label
+logo_label = ttk.Label(root, image=logo_photo)
+logo_label.pack(pady=10)
+
+# Create and pack the "Play" button with a larger size
+play_button = ttk.Button(root, text="Play", command=play_game, width=20)
+play_button.pack(pady=10)
+
+# Create and pack the "Settings" button with a larger size
+settings_button = ttk.Button(root, text="Settings", command=open_settings, width=20)
+settings_button.pack(pady=10)
+
+root.mainloop()
