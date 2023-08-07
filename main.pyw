@@ -7,7 +7,7 @@ import configparser
 
 # Function to handle the "Play" button click event
 def play_game():
-    settings_file = "extras/typebot.py"
+    settings_file = "typebot.py"
     if os.path.exists(settings_file):
         os.system(f"start {settings_file}")  # Open the file using the default text editor
     else:
@@ -25,7 +25,19 @@ def open_settings():
 root = tk.Tk()
 root.title("Typebot GUI")
 
-root.geometry("280x265")
+root.geometry("280x330")
+
+style = ttk.Style()
+style.configure('Bold.TLabel', font=('TkDefaultFont', 12, 'bold'))
+
+# Label for "TYPEBOT" text in bold
+typebot_label = ttk.Label(root, text="TYPEBOT", style='Bold.TLabel')
+typebot_label.pack(pady=5)
+
+# Label for emergency exit instruction (split into two lines)
+emergency_label = ttk.Label(root, text="WHEN YOU PRESS PLAY,\nPRESS CTRL+F8 TO EMERGENCY EXIT",
+                            anchor='center', justify='center')
+emergency_label.pack(pady=5)
 
 # Load the logo image
 logo_image = Image.open("extras/logo.png")
@@ -38,10 +50,10 @@ logo_label.pack(pady=10)
 
 # Create and pack the "Play" button with a larger size
 play_button = ttk.Button(root, text="Play", command=play_game, width=20)
-play_button.pack(pady=10)
+play_button.pack(pady=5, padx=20)
 
 # Create and pack the "Settings" button with a larger size
 settings_button = ttk.Button(root, text="Settings", command=open_settings, width=20)
-settings_button.pack(pady=10)
+settings_button.pack(pady=5, padx=20)
 
 root.mainloop()

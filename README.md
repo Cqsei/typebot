@@ -29,7 +29,7 @@
 ## Roadmap
 
 - [x] Upload files
-- [ ] Hotkey
+- [x] Hotkey
 - [x] Gui
 - [ ] Language support
     - [ ] Spanish

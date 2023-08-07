@@ -3,6 +3,8 @@ import random
 import threading
 import time
 import configparser
+import sys
+import keyboard
 
 # Read values from the INI file
 config = configparser.ConfigParser()
@@ -42,6 +44,10 @@ class Sim_keyb_typing(threading.Thread):
             self.last_char = char
             speed_delay = random.uniform(self.delayrange[0], self.delayrange[1])
             time.sleep(speed_delay)
+
+    while True:
+        if keyboard.is_pressed("ctrl+f8"):
+            sys.exit()
 
 # Let's wait 1.5 seconds and then start typing:
 skt = Sim_keyb_typing(txt, time_delay)
